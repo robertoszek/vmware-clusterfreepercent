@@ -1,4 +1,3 @@
-
 Script to find out how much space is available in a vSphere datastore cluster. It keeps track of the reserved space (by grouping it by vmName) on that particular cluster by writing on DSCFreeSpacePercentReservation.json.
 Implementations on Python and PowerShell are available.
 
