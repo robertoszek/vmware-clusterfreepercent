@@ -33,61 +33,61 @@ powershell -ExecutionPolicy bypass -f DSCFreeSpacePercent.ps1 vcenter.contoso.co
 Example of generated JSON:
 ```json
 {
-    "testvcenter":  [
-                                      {
-                                          "CLUSTER1":  [
-                                                                              {
-                                                                                  "reservation":  [
-                                                                                                      {
-                                                                                                          "timestamp":  "2020-04-28T09:35:37.0746668+02:00",
-                                                                                                          "requiredSpaceGB":  "370.0",
-                                                                                                          "vmName":  "myVM"
-                                                                                                      }
-                                                                                                  ]
-                                                                              }
-                                                                          ]
-                                      }
-                                  ],
-    "vcenter2.contoso.com":  [
-                                             {
-                                                 "CLUSTER_2":  [
-                                                                                     {
-                                                                                         "reservation":  [
-                                                                                                             {
-                                                                                                                 "timestamp":  "2020-04-29T09:46:16.1407379+02:00",
-                                                                                                                 "requiredSpaceGB":  "992.0",
-                                                                                                                 "vmName":  "myVM2"
-                                                                                                             }
-                                                                                                         ]
-                                                                                     }
-                                                                                 ],
-                                                 "CLUSTER_3":  [
-                                                                                      {
-                                                                                          "reservation":  [
-                                                                                                              {
-                                                                                                                  "timestamp":  "2020-04-29T12:53:42.5856768+02:00",
-                                                                                                                  "requiredSpaceGB":  "992.0",
-                                                                                                                  "vmName":  "myVM2"
-                                                                                                              },
-                                                                                                              {
-                                                                                                                  "timestamp":  "2020-04-29T12:58:06.8931503+02:00",
-                                                                                                                  "requiredSpaceGB":  "150.0",
-                                                                                                                  "vmName":  ""
-                                                                                                              },
-                                                                                                              {
-                                                                                                                  "timestamp":  "2020-04-29T13:02:23.5545745+02:00",
-                                                                                                                  "requiredSpaceGB":  "900.0",
-                                                                                                                  "vmName":  ""
-                                                                                                              },
-                                                                                                              {
-                                                                                                                  "timestamp":  "2020-04-29T13:05:18.8776620+02:00",
-                                                                                                                  "requiredSpaceGB":  "240.0",
-                                                                                                                  "vmName":  "myTotallyOriginalName"
-                                                                                                              }
-                                                                                                          ]
-                                                                                      }
-                                                                                  ]
-                                             }
-                                         ]
+   "testvcenter": [
+      {
+         "CLUSTER1": [
+            {
+               "reservation": [
+                  {
+                     "timestamp": "2020-04-28T09:35:37.0746668+02:00",
+                     "requiredSpaceGB": "370.0",
+                     "vmName": "myVM"
+                  }
+               ]
+            }
+         ]
+      }
+   ],
+   "vcenter2.contoso.com": [
+      {
+         "CLUSTER_2": [
+            {
+               "reservation": [
+                  {
+                     "timestamp": "2020-04-29T09:46:16.1407379+02:00",
+                     "requiredSpaceGB": "992.0",
+                     "vmName": "myVM2"
+                  }
+               ]
+            }
+         ],
+         "CLUSTER_3": [
+            {
+               "reservation": [
+                  {
+                     "timestamp": "2020-04-29T12:53:42.5856768+02:00",
+                     "requiredSpaceGB": "992.0",
+                     "vmName": "myVM2"
+                  },
+                  {
+                     "timestamp": "2020-04-29T12:58:06.8931503+02:00",
+                     "requiredSpaceGB": "150.0",
+                     "vmName": ""
+                  },
+                  {
+                     "timestamp": "2020-04-29T13:02:23.5545745+02:00",
+                     "requiredSpaceGB": "900.0",
+                     "vmName": ""
+                  },
+                  {
+                     "timestamp": "2020-04-29T13:05:18.8776620+02:00",
+                     "requiredSpaceGB": "240.0",
+                     "vmName": "myTotallyOriginalName"
+                  }
+               ]
+            }
+         ]
+      }
+   ]
 }
 ```
